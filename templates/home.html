@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   {% if user.is_authenticated %}
+   {% for i in object_list %}
+   <div class="post-entry">
+      <h2><a href="{% url 'post' i.pk %}">{{i.title}}</a></h2>
+      <p>{{i.description}}</p>
+      <h4>By:--{{i.author}}</h4>
+   </div>
+
+   {% endfor %}
+   {% endif %}
+{% endblock content %}   
+
+
+
+
+
+
+
+
+

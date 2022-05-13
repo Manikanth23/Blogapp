@@ -1,0 +1,62 @@
+body{
+    background-color:cyan;
+    background-image:url("/static/images/sunset.b78512b7127c.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    background-color:tomato;
+    margin-left: 520px;   
+    width:300px;
+}
+/* .login{
+    text-align-last: center;
+    padding-right: 300px;
+    margin-left: 500px;
+    width: 300px;
+} */
+header {
+    border-bottom: 1px solid #950;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.jumbotron{
+    margin-top: 30px;
+    background-color:rgb(208, 198, 195);
+    border: 3px solid tomato;  
+    border-radius: 12px;
+    padding-left: 100px;
+}  
+.nav-right {
+   margin-left: auto;
+   position: absolute;
+   top: 50px;
+   right: 20px;
+}
+.logout{
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    
+} 
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
+.post-entry h2 a:hover {
+    color: red;
+}
+    

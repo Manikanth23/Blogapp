@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>Are you sure want to delete? "{{book.title}}"</p>
+    <input type="submit" value="Delete">
+</form>
+
+{% endblock content %}
+
+

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class='post-entry'>
+    <strong>Title:{{object.title}}</strong> <br><br>
+    <img src="{{object.imageURL}}"><br><br>
+    
+    <b>Description:</b><i>{{object.description}}</i><br><br> 
+    
+    <b>Author:--{{object.author}}</b><br><br>
+    </div>
+    <a href="{% url 'post_edit' book.pk %}"><button type="button" class="btn btn-primary btn-lg">Edit</button></a>
+    <a href="{% url 'delete' book.pk%}"><button type="button" class="btn btn-danger btn-lg">Delete</button></a>
+{% endblock content %}
